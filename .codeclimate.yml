@@ -37,7 +37,7 @@ plugins:
     config:
       ignore_warnings: true
       standard: "phpcs.xml"
-  phpcodesniffer:
+  phpmd:
     enabled: true
     config:
       rulesets: "phpmd.xml"
