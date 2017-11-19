@@ -3,6 +3,9 @@ prepare:
   fetch:
   - url: "https://raw.githubusercontent.com/uMotif/standards/master/codesniffer/phpcs.xml"
     path: "phpcs.xml"
+  fetch:
+  - url: "https://raw.githubusercontent.com/uMotif/standards/master/phpmd/phpmd.xml"
+    path: "phpmd.xml"
 checks:
   argument-count:
     config:
@@ -21,7 +24,7 @@ checks:
       threshold: 30
   method-lines:
     config:
-      threshold: 50
+      threshold: 100
   nested-control-flow:
     config:
       threshold: 4
@@ -34,3 +37,9 @@ plugins:
     config:
       ignore_warnings: true
       standard: "phpcs.xml"
+  phpcodesniffer:
+    enabled: true
+    config:
+      rulesets: "phpmd.xml"
+  fixme:
+    enabled: true
