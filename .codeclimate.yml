@@ -3,7 +3,6 @@ prepare:
   fetch:
   - url: "https://raw.githubusercontent.com/uMotif/standards/master/codesniffer/phpcs.xml"
     path: "phpcs.xml"
-  fetch:
   - url: "https://raw.githubusercontent.com/uMotif/standards/master/phpmd/phpmd.xml"
     path: "phpmd.xml"
 checks:
