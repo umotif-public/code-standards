@@ -1,9 +1,9 @@
 version: "2"
 prepare:
   fetch:
-  - url: "https://raw.githubusercontent.com/uMotif/standards/master/codesniffer/phpcs.xml"
+  - url: "https://s3-eu-west-1.amazonaws.com/malefic-postfix-sacred-lumbago/codesniffer/phpcs.xml"
     path: "phpcs.xml"
-  - url: "https://raw.githubusercontent.com/uMotif/standards/master/phpmd/phpmd.xml"
+  - url: "https://s3-eu-west-1.amazonaws.com/malefic-postfix-sacred-lumbago/phpmd/phpmd.xml"
     path: "phpmd.xml"
 checks:
   argument-count:
