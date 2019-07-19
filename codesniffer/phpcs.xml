@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ruleset name="uMotif Standard">
 
-    <rule ref="PSR2">
+    <rule ref="PSR12">
         <exclude name="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
         <exclude name="PSR2.Methods.FunctionCallSignature.ContentAfterOpenBracket"/>
         <exclude name="PSR2.Methods.FunctionClosingBrace.SpacingBeforeClose"/>
