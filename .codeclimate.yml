@@ -1,10 +1,5 @@
 version: "2"
-prepare:
-  fetch:
-  - url: "https://s3-eu-west-1.amazonaws.com/malefic-postfix-sacred-lumbago/codesniffer/phpcs.xml"
-    path: "phpcs.xml"
-  - url: "https://s3-eu-west-1.amazonaws.com/malefic-postfix-sacred-lumbago/phpmd/phpmd.xml"
-    path: "phpmd.xml"
+
 checks:
   argument-count:
     config:
@@ -30,15 +25,16 @@ checks:
   return-statements:
     config:
       threshold: 5
+
 plugins:
   phpcodesniffer:
     enabled: true
     config:
       ignore_warnings: true
-      standard: "phpcs.xml"
+      standard: "vendor/umotif/standards/codesniffer/phpcs.xml"
   phpmd:
     enabled: true
     config:
-      rulesets: "phpmd.xml"
+      rulesets: "vendor/umotif/standards/phpmd/phpmd.xml"
   fixme:
     enabled: true
