@@ -1,0 +1,7 @@
+{
+    "name": "umotif/standards",
+    "description": "Code style guides and standards",
+    "type": "metapackage",
+    "license": "MIT",
+    "require": {}
+}
