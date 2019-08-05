@@ -1,7 +1,9 @@
 {
     "name": "umotif/standards",
     "description": "Code style guides and standards",
-    "type": "metapackage",
-    "license": "MIT",
-    "require": {}
+    "repositories": [
+      { "type": "composer", "url": "s3://umotif-ops-satis" }
+    ],
+    "require": {},
+    "minimum-stability": "stable"
 }
