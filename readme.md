@@ -8,7 +8,7 @@ First, clone the standards repository **in your home directory**.
 
 ```bash
 cd
-git clone git@github.com:uMotif/standards.git
+git clone git@gitlab.com:umotif/standards.git
 cd standards
 make update
 ```
