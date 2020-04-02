@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
 <ruleset name="uMotif Standard">
-
     <rule ref="PSR12">
         <exclude name="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
         <exclude name="PSR2.Methods.FunctionCallSignature.ContentAfterOpenBracket"/>
@@ -18,4 +17,5 @@
         <exclude-pattern>*/seeds/*</exclude-pattern>
     </rule>
 
+    <rule ref="Generic.PHP.RequireStrictTypes"></rule>
 </ruleset>
