@@ -54,6 +54,7 @@
         <exclude name="ShortVariable" />
         <exclude name="ShortMethodName" />
         <exclude name="LongVariable" />
+        <exclude name="LongClassName" />
     </rule>
 
     <rule ref="rulesets/naming.xml/ShortVariable">
@@ -71,6 +72,14 @@
     <rule ref="rulesets/naming.xml/LongVariable">
         <properties>
             <property name="maximum" value="30" />
+            <property name="subtract-suffixes" value="Controller,Command,Collection,Repository,Connection,Response,Entity,Reader,Writer,Helper,Factory,Exception,Subscriber,Listener" />
+        </properties>
+    </rule>
+
+    <rule ref="rulesets/naming.xml/LongClassName">
+        <properties>
+            <property name="maximum" value="60" />
+            <property name="subtract-suffixes" value="Test,Controller,Command,Collection,Repository,Connection,Response,Entity,ReaderWriter,Reader,Writer,Helper,Factory,Interface,Exception,Subscriber,Listener" />
         </properties>
     </rule>
 
