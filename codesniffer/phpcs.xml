@@ -17,4 +17,11 @@
     </rule>
 
     <rule ref="Generic.PHP.RequireStrictTypes"></rule>
+
+    <!-- Enable variable name rules -->
+    <rule ref="Squiz.NamingConventions.ValidVariableName"/>
+    <!-- Disable that one about the underscores -->
+    <rule ref="Squiz.NamingConventions.ValidVariableName.PrivateNoUnderscore">
+        <severity>0</severity>
+    </rule>
 </ruleset>
